@@ -20,4 +20,6 @@ La aplicación se encuentra en http://localhost:8000
 -->Filtrado en la API según parametros escritos en la url ``(localhost:3000/api/subjects/date/:when) or (localhost:3000/api/subjects/:name)``
 -->Ordenado por orden alfabético la lista de estudiantes
 
-
+###No Funciona
+-->Falta ordenar en web segun fecha y nombre de Asignatura
+-->Ordenar Asignaturas por nombre de alumnos

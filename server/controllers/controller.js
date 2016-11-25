@@ -65,6 +65,19 @@ exports.findAllSubjectsBywhen = function (req, res) {
     });
 };
 
+/**GET show number of students in Subjects**/
+/*exports.countStudents = function(req,res){
+    subjectModel.students.aggregate( {
+        $group: {
+            _id: req.body.id,
+                total: { $sum: { $size:"students" } }
+        }
+    }).exec(function(error, subject) {
+        console.log(JSON.stringify(subject, null, "\t"));
+        res.status(200).jsonp(subject);
+});*/
+
+
 /**GET subject by subject._id**/
 exports.findSubjectById = function(req, res) {
     subjectModel.findById(req.params.id, function(err) {
@@ -91,7 +104,6 @@ exports.addSubject = function (req, res) {
         });
     });
 };
-
 
 
 /**POST insert student into subject collection**/

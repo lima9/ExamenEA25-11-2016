@@ -63,11 +63,16 @@ apiRoutes.route('/subjects')
     .get(ctrl.findAllSubjects)
     .post(ctrl.addSubject);
 
+/*
+apiRoutes.route('/subjects/count/:id')
+    .get(ctrl.countStudents);
+*/
+
 apiRoutes.route('/subjects/:name')
-    .get(ctrl.findAllSubjectsByname)
+    .get(ctrl.findAllSubjectsByname);
 
 apiRoutes.route('/subjects/date/:when')
-    .get(ctrl.findAllSubjectsBywhen)
+    .get(ctrl.findAllSubjectsBywhen);
 
 apiRoutes.route('/subjects/by/id/:id')
     .get(ctrl.findSubjectById);
