@@ -1,0 +1,9 @@
+# Dependency directories
+/server/node_modules
+/web/node_modules
+/web/app/bower_components
+
+# Idea conf
+.idea/
+
+

@@ -1,0 +1,17 @@
+{
+  "name": "Web EA grup 3",
+  "description": "FoodSports Front-End",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "angular-loader": "1.5.8",
+    "angular-mocks": "1.5.8",
+    "html5-boilerplate": "^5.3.0",
+    "modernizr": "3.3.1",
+    "fontawesome": "4.7.0",
+    "angular-material": "^1.1.1",
+    "moment": "*"
+  }
+}

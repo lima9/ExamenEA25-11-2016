@@ -1,0 +1,72 @@
+<md-button ng-href="#" class="md-raised" flex="50" flex-sm="100">Main</md-button>
+
+
+<md-content>
+    <md-card>
+        <img ng-src="/assets/img/subject.png" class="md-card-image" style="width:50px;">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{subject.name}}</span>
+                <span class="md-headline">{{subject.when}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+        <!--    <md-button ng-click="showNewStudent()">
+                Add student
+            </md-button>-->
+        </md-card-actions>
+        <md-card-content>
+            <h1>Period of time:</h1>
+            <p>
+                {{subject.when}}
+            </p>
+            <hr>
+            <h4>Students:</h4>
+            <md-list flex>
+                <md-list-item class="md-3-line" ng-repeat="student in subject.students"
+                              ng-href="#!/students/{{student._id}}">
+                    <img ng-src="/assets/img/user.png" class="md-avatar" alt="{{item.who}}"/>
+                    <div class="md-list-item-text" layout="column">
+                        <h3>{{student.name}}</h3>
+                        <h4>{{student.description}}</h4>
+                        <p>{{student.address}}</p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </md-card-content>
+
+    </md-card>
+
+</md-content>
+
+
+<!-- pre-rendered dialog add student -->
+<!--
+<div style="visibility: hidden">
+    <div class="md-dialog-container" id="myDialog">
+        <md-dialog layout-padding>
+
+            <md-input-container>
+                <label>Name</label>
+                <input ng-model="newStudent.name">
+            </md-input-container>
+            <md-input-container>
+                <label>Description</label>
+                <input ng-model="newStudent.description">
+            </md-input-container>
+            <md-input-container>
+                <label>Address</label>
+                <input ng-model="newStudent.address">
+            </md-input-container>
+            <md-input-container layout-align="center center">
+                <div layout="row" layout-sm="column" layout-margin>
+                    <md-button ng-click="postNewStudentToSubject()" class="md-raised md-primary" flex="50"
+                               flex-sm="100">Add Student!
+                    </md-button>
+                </div>
+            </md-input-container>
+
+        </md-dialog>
+    </div>
+</div>
+-->

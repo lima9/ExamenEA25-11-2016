@@ -1,0 +1,61 @@
+<div ng-include="'views/sidenav.html'"></div>
+
+
+<h1>Examen EA Otoño 2016</h1>
+
+<md-content>
+    <h3>List of all subjects</h3>
+<!--    <md-button layout-align="end center" ng-click="showNewSubject()">
+        Add subject
+    </md-button>-->
+    <md-list flex>
+        <md-list-item class="md-3-line" ng-repeat="subject in subjects" ng-href="#!/subjects/{{subject._id}}">
+            <img ng-src="/assets/img/subject.png" class="md-avatar" alt="{{item.who}}"/>
+            <div class="md-list-item-text" layout="column">
+                <h3>{{subject.name}}</h3>
+                <h4>{{subject.role}}</h4>
+                <p>{{subject.email}}</p>
+            </div>
+        </md-list-item>
+    </md-list>
+</md-content>
+
+<md-content>
+    <h3>List of all students in alfabetical order</h3>
+    <md-list flex>
+        <md-list-item class="md-3-line" ng-repeat="student in students | orderBy:'name'" ng-href="#!/students/{{student._id}}">
+            <img ng-src="/assets/img/user.png" class="md-avatar" alt="{{item.who}}"/>
+            <div class="md-list-item-text" layout="column">
+                <h3>{{student.name}}</h3>
+                <h4>{{student.description}}</h4>
+                <p>{{student.address}}</p>
+            </div>
+        </md-list-item>
+    </md-list>
+</md-content>
+
+
+<!-- pre-rendered dialog add subject -->
+<!--<div style="visibility: hidden">
+    <div class="md-dialog-container" id="myDialog">
+        <md-dialog layout-padding>
+
+            <md-input-container>
+                <label>Name</label>
+                <input ng-model="newSubject.name">
+            </md-input-container>
+            <md-input-container>
+                <label>Description</label>
+                <input ng-model="newSubject.description">
+            </md-input-container>
+            <md-input-container layout-align="center center">
+                <div layout="row" layout-sm="column" layout-margin>
+                    <md-button ng-click="postNewSubject()" class="md-raised md-primary" flex="50" flex-sm="100">Add
+                        Subject!
+                    </md-button>
+                </div>
+            </md-input-container>
+
+        </md-dialog>
+    </div>
+</div>-->
