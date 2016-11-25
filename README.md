@@ -26,7 +26,7 @@ La aplicación se encuentra en http://localhost:8000
 
 ``(localhost:3000/api/subjects/date/:when) o (localhost:3000/api/subjects/:name)``
 
--->Ordenado por orden alfabético la lista de estudiantes
+-->Ordenado por orden alfabético la lista de estudiantes y asignaturas
 
 ###No Funciona
 
